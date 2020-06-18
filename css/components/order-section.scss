@@ -1,0 +1,18 @@
+.order-section {
+  position: relative;
+  background: url("../img/decor/berries-background.png") center / cover no-repeat;
+
+  &:before {
+    content: url("../img/decor/alone-berry.png");
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+  }
+
+  &:after {
+    content: url("../img/decor/right-side-leaf.png");
+    position: absolute;
+    bottom: 65px;
+    right: 0;
+  }
+}
