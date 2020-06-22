@@ -1,20 +1,29 @@
 .reviews__display {
   background: url("../img/decor/blackberry-branch.png") right top no-repeat;
   background-color: #f8faf9;
-  padding: 50px 45px 34px;
-  margin-bottom: 20px;
+  padding: rem(50px) rem(22px) rem(34px);
+  margin-bottom: rem(20px);
   position: relative;
   overflow: hidden;
+
+  @include tablets {
+    background-size: 18%;
+  }
+
+  @include phones {
+    background-size: 28%;
+    background-position: right -2% top 12%;
+  }
 
   &:before {
     content: "";
     display: flex;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: #fff;
     border-radius: 50%;
     position: absolute;
-    top: -65px;
+    top: rem(-65px);
     left: 50%;
     transform: translateX(-50%);
   }
@@ -22,11 +31,22 @@
 
 .reviews__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: rem(254px);
+  height: rem(260px);
+
+  @include tablets {
+    width: rem(131px);
+    height: rem(133px);
+  }
 }
 
 .reviews__avatar-img {
@@ -37,27 +57,60 @@
 
 .reviews__content {
   flex: 1;
-  margin-left: 20px;
+  margin-left: rem(20px);
   padding-right: 12%;
+
+  @include tablets {
+    padding-right: 0;
+    margin: 0 rem(20px);
+  }
+
+  @include phones {
+    margin: 0;
+  }
 }
 
 .reviews__title {
   color: #000;
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: bold;
-  margin-top: 8px;
-  margin-bottom: 22px;
+  margin-top: rem(8px);
+  margin-bottom: rem(22px);
+
+  @include tablets {
+    margin-top: rem(30px);
+    margin-bottom: rem(13px);
+  }
+
+  @include phones {
+    font-size: rem(32px);
+    line-height: 1.1;
+  }
 }
 
 .reviews__text {
   line-height: 1.2;
-  margin-bottom: 27px;
+  margin-bottom: rem(27px);
+
+  @include tablets {
+    line-height: 1.3;
+    margin-bottom: rem(15px);
+  }
+
+  @include phones {
+    font-size: rem(22px);
+    line-height: 1.15;
+  }
 }
 
 .reviews__author {
   color: #000;
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: bold;
+
+  @include phones {
+    font-size: rem(22px);
+  }
 }
 
 .reviews__switcher {

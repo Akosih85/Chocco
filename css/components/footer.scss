@@ -1,0 +1,16 @@
+.footer {
+  height: 100vh;
+  background: url("../img/footer.png") top / contain no-repeat;
+
+  @include tablets {
+    background: url("../img/footer-768.png") top / contain no-repeat;
+  }
+  
+  @include tablets {
+    background: url("../img/footer-480.png") top / contain no-repeat;
+  }
+}
+
+.footer__back {
+  height: rem(50px);
+}

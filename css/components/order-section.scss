@@ -5,14 +5,22 @@
   &:before {
     content: url("../img/decor/alone-berry.png");
     position: absolute;
-    bottom: 75px;
+    bottom: rem(75px);
     left: 0;
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &:after {
     content: url("../img/decor/right-side-leaf.png");
     position: absolute;
-    bottom: 65px;
+    bottom: rem(65px);
     right: 0;
+
+    @include tablets {
+      display: none;
+    }
   }
 }

@@ -5,16 +5,30 @@
   &:before {
     content: url("../img/decor/side-leaf-1.png");
     position: absolute;
-    bottom: -190px;
+    bottom: rem(-190px);
     left: 0;
     z-index: 1;
+
+    @include tablets {
+      bottom: rem(-125px);
+      left: rem(-28px);
+    }
   }
 
   &:after {
     content: url("../img/decor/berries.png");
     position: absolute;
-    bottom: -115px;
+    bottom: rem(-115px);
     left: 0;
     z-index: 1;
+
+    @include tablets {
+      bottom: rem(-65px);
+      left: rem(-35px);
+    }
+  }
+
+  @include tablets {
+    background-position: right -5% top 2%;
   }
 }
