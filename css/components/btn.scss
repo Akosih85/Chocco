@@ -1,0 +1,53 @@
+.btn {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 19px 36px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  display: inline-flex;
+  border: none;
+
+  &_theme_white {
+    background: #fff;
+    color: $darkGreen;
+
+    &:hover {
+      color: #fff;
+      background: $darkGreen;
+    }
+  }
+
+  &_theme_green {
+    background: $darkGreen;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      color: $darkGreen;
+      background: #fff;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+  }
+  
+  &_theme_transparent {
+    background: transparent;
+    color: #000;
+    cursor: pointer;
+    text-transform: none;
+    padding: 19px 25px;
+    font-size: 18px;
+    
+    &:hover {
+      color: $darkGreen;
+    }
+    
+    &:focus {
+      outline: none;
+    }
+  }
+}
