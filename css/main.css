@@ -14,6 +14,11 @@ html {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 13px;
+  }
+}
 
 html,
 body {
@@ -89,6 +94,13 @@ img {
   max-width: 100%;
 }
 
+.phone {
+  fill: #fff;
+}
+.phone_green {
+  fill: #365a49;
+}
+
 .feature__icon {
   height: 2rem;
   fill: #51b098;
@@ -96,6 +108,15 @@ img {
 
 .measure, .person, .smile, .hand {
   fill: #54a791;
+}
+
+.vk, .fb, .insta, .tweet {
+  width: 20px;
+  height: 20px;
+  fill: #b3b3b3;
+}
+.vk:hover, .fb:hover, .insta:hover, .tweet:hover {
+  fill: #000;
 }
 
 .hero {
@@ -108,6 +129,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .hero {
+    min-height: initial;
     background-position: right top 8%;
   }
 }
@@ -387,6 +409,11 @@ img {
     margin-bottom: 1.6666666667rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .section {
+    min-height: initial;
+  }
+}
 
 .section__title {
   color: #000;
@@ -399,6 +426,7 @@ img {
 @media screen and (max-width: 480px) {
   .section__title {
     font-size: 2.5rem;
+    margin-bottom: 1.6666666667rem;
   }
 }
 
@@ -418,7 +446,7 @@ img {
 @media screen and (max-width: 480px) {
   .headline__subtitle {
     font-size: 1.1111111111rem;
-    margin-bottom: 3.7222222222rem;
+    margin-bottom: 2.6111111111rem;
     padding: 0 3%;
   }
 }
@@ -728,6 +756,12 @@ img {
     left: -1.5555555556rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .reviews-section:before {
+    bottom: -12.7777777778rem;
+    left: -3.3333333333rem;
+  }
+}
 .reviews-section:after {
   content: url("../img/decor/berries.png");
   position: absolute;
@@ -741,9 +775,20 @@ img {
     left: -1.9444444444rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .reviews-section:after {
+    bottom: -4.4444444444rem;
+    left: -5rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .reviews-section {
-    background-position: right -5% top 2%;
+    background-position: right -5% top;
+  }
+}
+@media screen and (max-width: 360px) {
+  .reviews-section {
+    background-position: right -20% top 7%;
   }
 }
 
@@ -896,7 +941,7 @@ img {
   border-radius: 0;
 }
 .radio_checkbox .radio__visible:before {
-  background: url("../img/icons/checkmark.svg");
+  background: url("../img/icons/checkmark.svg") no-repeat;
 }
 
 .radio__elem {
@@ -991,21 +1036,96 @@ img {
   border-radius: 10px;
 }
 
-.footer {
-  height: 100vh;
-  background: url("../img/footer.png") top/contain no-repeat;
+.contacts-section {
+  position: relative;
+}
+
+.map {
+  height: 100%;
+  background: url("../img/map.png") center center/cover no-repeat;
 }
 @media screen and (max-width: 768px) {
-  .footer {
-    background: url("../img/footer-768.png") top/contain no-repeat;
+  .map {
+    background: url("../img/map-768.png") center center/cover no-repeat;
   }
 }
-@media screen and (max-width: 768px) {
-  .footer {
-    background: url("../img/footer-480.png") top/contain no-repeat;
+@media screen and (max-width: 480px) {
+  .map {
+    background: url("../img/map-480.png") center center/cover no-repeat;
   }
 }
 
-.footer__back {
-  height: 2.7777777778rem;
+.contacts {
+  font-size: 1.1666666667rem;
+  color: #000;
+  font-style: normal;
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    font-size: 1.2222222222rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contacts {
+    font-size: 1.3333333333rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5555555556rem;
+    line-height: 1.6;
+  }
+}
+
+.contacts__col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.socials__item {
+  margin-right: 1.1111111111rem;
+}
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.footer {
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.1666666667rem 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .footer__container {
+    flex-direction: column;
+  }
+}
+
+.footer__phone-number {
+  font-size: 1.1666666667rem;
+  color: #365a49;
+}
+@media screen and (max-width: 768px) {
+  .footer__phone-number {
+    font-size: 1.2222222222rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__phone-number {
+    font-size: 1.3333333333rem;
+  }
 }
