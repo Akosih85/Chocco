@@ -1,9 +1,16 @@
 $containerWidth: 940px;
 $bazeFontSize: 18px;
 
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+$phonesxs: 360px;
+
 //colors
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
+
+@import "media";
 
 //z-indexes
 $z-fixed-menu: 100;
@@ -17,6 +24,7 @@ $z-fixed-menu: 100;
 @import "layout";
 
 //components
+@import "components/icons";
 @import "components/hero";
 @import "components/header";
 @import "components/features";
@@ -34,3 +42,8 @@ $z-fixed-menu: 100;
 @import "components/form";
 @import "components/radio";
 @import "components/fixed-menu";
+@import "components/hamburger";
+@import "components/contacts-section";
+@import "components/contacts";
+@import "components/socials";
+@import "components/footer";

@@ -1,9 +1,9 @@
 .btn {
-  font-size: 19px;
+  font-size: rem(19px);
   font-weight: bold;
-  padding: 19px 36px;
+  padding: rem(19px) rem(36px);
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: rem(100px);
   line-height: 1;
   display: inline-flex;
   border: none;
@@ -30,7 +30,7 @@
 
     &:focus {
       outline: none;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      box-shadow: 0 0 rem(20px) rgba(0,0,0,0.5);
     }
   }
   
@@ -39,8 +39,8 @@
     color: #000;
     cursor: pointer;
     text-transform: none;
-    padding: 19px 25px;
-    font-size: 18px;
+    padding: rem(19px) rem(25px);
+    font-size: rem(18px);
     
     &:hover {
       color: $darkGreen;
@@ -49,5 +49,15 @@
     &:focus {
       outline: none;
     }
+  }
+
+  @include tablets {
+    line-height: 1.2;
+  }
+
+  @include phones {
+    font-size: rem(20px);
+    line-height: 1.42;
+    letter-spacing: 1px;
   }
 }

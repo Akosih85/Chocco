@@ -1,0 +1,24 @@
+.contacts {  
+  font-size: rem(21px);
+  color: #000;
+  font-style: normal;
+
+  @include tablets {
+    font-size: rem(22px);
+  }
+  
+  @include phones {
+    font-size: rem(24px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: rem(10px);
+    line-height: 1.6;
+  }
+}
+
+.contacts__col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

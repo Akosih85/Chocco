@@ -1,0 +1,26 @@
+.phone {
+  fill: #fff;
+
+  &_green {
+    fill: #365a49;
+  }
+}
+
+.feature__icon {
+  height: rem(36px);
+  fill:#51b098;
+}
+
+.measure, .person, .smile, .hand {
+  fill: #54a791;
+}
+
+.vk, .fb, .insta, .tweet {
+  width: 20px;
+  height: 20px;
+  fill: #b3b3b3;
+
+  &:hover {
+    fill: #000;
+  }
+}
