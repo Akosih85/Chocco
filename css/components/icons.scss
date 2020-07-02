@@ -24,3 +24,51 @@
     fill: #000;
   }
 }
+
+.arrow {
+  width: 16px;
+  height: 32px;
+  fill: #151515;
+}
+
+.left-arrow {
+  transform: rotateY(180deg);
+}
+
+.compound {
+  width: 51px;
+  height: 51px;
+  fill: #fff;
+}
+
+.grape, .nut, .sesame, .milk, .sugar, .beans, .oat, .seaweed, .seeds {
+  width: 35px;
+  height: 35px;
+  fill: #363636;
+}
+
+.rub {
+  width: 30px;
+  height: 30px;
+  fill: #151515;
+}
+
+.hamburger {
+  width: 25px;
+  height: 23px;
+  fill: #fff;
+
+  &:hover {
+    fill: #0b4d3c;
+  }
+}
+
+.close {
+  width: 21px;
+  height: 21px;
+  fill: #fff;
+
+  &:hover {
+    fill: #61c4d9;
+  }
+}
