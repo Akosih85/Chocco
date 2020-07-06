@@ -1,13 +1,13 @@
-const hamBtn = document.querySelector('.hamburger__menu-link');
-const hamMenu = document.querySelector('.hamburger__overlay');
-const hamClose = document.querySelector('.hamburger__close');
+const Ham_btn = document.querySelector('.hamburger__menu-link');
+const Ham_menu = document.querySelector('.hamburger__overlay');
+const Ham_close = document.querySelector('.hamburger__close');
 
-hamBtn.addEventListener('click', e => {
+Ham_btn.addEventListener('click', e => {
   e.preventDefault();
-  hamMenu.style.display = 'flex';
+  Ham_menu.style.display = 'flex';
 })
 
-hamClose.addEventListener('click', e => {
+Ham_close.addEventListener('click', e => {
   e.preventDefault();
-  hamMenu.style.display = 'none';
+  Ham_menu.style.display = 'none';
 })

@@ -1,47 +1,49 @@
-const compound = document.querySelectorAll('.slider__compound-link');
-const ingredients = document.querySelectorAll('.slider__ingredients-list');
-const ingredient = document.querySelector('.slider__ingredients-list');
-const leftBtn = document.querySelector('.left-arrow');
-const rightBtn = document.querySelector('.right-arrow');
-const sliderList = document.querySelector('.slider__list');
-const sliderItems = document.querySelectorAll('.slider__item')
-const computedStyles = window.getComputedStyle(sliderList);
+const Compound = document.querySelectorAll('.slider__compound-link');
+const Ingredients = document.querySelectorAll('.slider__ingredients-list');
+const Ingredient = document.querySelector('.slider__ingredients-list');
+const Left_btn = document.querySelector('.left-arrow');
+const Right_btn = document.querySelector('.right-arrow');
+const Slider_list = document.querySelector('.slider__list');
+const Slider_items = document.querySelectorAll('.slider__item')
+const Computed_styles = window.getComputedStyle(Slider_list);
 
-const minRight = 0;
-const step = 100;
-const maxRight = (sliderItems.length - 1) * step;
+const Min_right = 0;
+const Step = 100;
+const Max_right = (Slider_items.length - 1) * Step;
 let currentPos = 0;
 
-compound.forEach((compoundBtn) => compoundBtn.addEventListener('click', e => {
+Compound.forEach((compoundBtn) => compoundBtn.addEventListener('click', e => {
   e.preventDefault();
   
-  if (ingredient.style.display != 'flex') {
-    currentDisplay = 'flex';  // для проверки текущего состояния
-    ingredients.forEach((displayFlex) => displayFlex.style.display = 'flex');
-    console.log(currentDisplay); // вывод текущего состояния
+  if (Ingredient.style.display != 'flex') {
+    Ingredients.forEach((displayFlex) => displayFlex.style.display = 'flex');
   } else {
-    currentDisplay = 'none';
-    ingredients.forEach((displayNone) => displayNone.style.display = 'none');
-    console.log(currentDisplay);
+    Ingredients.forEach((displayNone) => displayNone.style.display = 'none');
   }
 }));
 
-sliderList.style.right = currentPos;
+Slider_list.style.right = currentPos;
 
-leftBtn.addEventListener('click', e => {
+Left_btn.addEventListener('click', e => {
   e.preventDefault();
   
-  if (currentPos > minRight) {
-    currentPos -= step;
-    sliderList.style.right = `${currentPos}%`;
+  if (currentPos > Min_right) {
+    currentPos -= Step;
+    Slider_list.style.right = `${currentPos}%`;
+  } else {
+    currentPos = Max_right;
+    Slider_list.style.right = `${currentPos}%`;
   }
 });
 
-rightBtn.addEventListener('click', e => {
+Right_btn.addEventListener('click', e => {
   e.preventDefault();
   
-  if (currentPos < maxRight) {
-    currentPos += step;
-    sliderList.style.right = `${currentPos}%`
+  if (currentPos < Max_right) {
+    currentPos += Step;
+    Slider_list.style.right = `${currentPos}%`
+  } else {
+    currentPos = Min_right;
+    Slider_list.style.right = `${currentPos}%`;
   }
 });
