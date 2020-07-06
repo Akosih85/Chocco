@@ -33,6 +33,11 @@
       box-shadow: 0 0 rem(20px) rgba(0,0,0,0.5);
     }
   }
+
+  &_slider:hover {
+    background: #2e4e3f;
+    color: #fff;
+  }
   
   &_theme_transparent {
     background: transparent;

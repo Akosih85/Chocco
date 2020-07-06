@@ -4,7 +4,7 @@ $bazeFontSize: 18px;
 //breakpoints
 $tablets: 768px;
 $phones: 480px;
-$phonesxs: 360px;
+$phonesxs: 375px;
 
 //colors
 $blue: #61c4d9;
@@ -35,6 +35,8 @@ $z-fixed-menu: 100;
 @import "components/benefits";
 @import "components/benefit";
 @import "components/benefits-section";
+@import "components/slider-section";
+@import "components/slider";
 @import "components/reviews";
 @import "components/interactive-avatar";
 @import "components/reviews-section";

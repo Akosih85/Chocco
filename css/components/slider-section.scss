@@ -1,0 +1,34 @@
+.slider-section {
+  background: #f8faf9;
+  position: relative;
+
+  &:before {
+    content: url("../img/decor/side-leaf-2.png");
+    position: absolute;
+    right: -1%;
+    bottom: -34%;
+
+    @include tablets {
+      bottom: -21%;
+    }
+  }
+
+  &:after {
+    content: url("../img/decor/bluberries.png");
+    position: absolute;
+    right: 0;
+    bottom: -12%;
+
+    @include tablets {
+      bottom: -7%;
+    }
+
+    @include phonesxs {
+      display: none;
+    }
+  }
+}
+
+.slider__container {
+  display: flex;
+}
