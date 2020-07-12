@@ -37,15 +37,24 @@
 .slider {
   max-width: rem(940px);
   display: flex;
-  overflow: hidden;  
+  overflow: hidden;
+
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    margin-bottom: 0;
+  }
 }
 
 .slider__list {
   width: 100%;
   display: flex;
   position: relative;
-  right: 0;
-  transition: right .3s;
+
+  //для ванильного JS-слайдера
+  // right: 0;
+  // transition: right .3s;
 }
 
 .slider__item {

@@ -1,0 +1,22 @@
+.team-section {
+  position: relative;
+
+  &:before {
+    content: url("../img/decor/raspberry.png");
+    position: absolute;
+    left: 2%;
+    bottom: -8%;
+    z-index: 1;
+
+    @include phones {
+      display: none;
+    }
+  }
+
+  .section__title {
+    @include tablets {
+      font-size: rem(51px);
+      margin-bottom: rem(32px);
+    }
+  }
+}
