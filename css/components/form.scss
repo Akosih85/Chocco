@@ -84,6 +84,10 @@
     border-color: #dee2bd;
     outline: none;
   }
+
+  &.input-error {
+    border-color: red;
+  }
 }
 
 .form__controls {
