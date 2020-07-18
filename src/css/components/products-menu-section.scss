@@ -1,0 +1,22 @@
+.products-menu-section {
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("../img/menu/menu.jpeg") center center / cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.products-menu-section__title {
+  color: #fff;
+  position: absolute;
+  top: 12%;
+  left: 6%;
+
+  @include tablets {
+    top: 14%;
+    left: 5%;
+  }
+
+  @include phones {
+    top: 11%;
+    left: 2%;
+  }
+}

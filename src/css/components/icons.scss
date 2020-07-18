@@ -1,0 +1,100 @@
+.phone {
+  fill: #fff;
+
+  &_green {
+    fill: #365a49;
+  }
+}
+
+.feature__icon {
+  height: rem(36px);
+  fill:#51b098;
+}
+
+.measure, .person, .smile, .hand {
+  fill: #54a791;
+}
+
+.vk, .fb, .insta, .tweet {
+  width: 20px;
+  height: 20px;
+  fill: #b3b3b3;
+
+  &:hover {
+    fill: #000;
+  }
+}
+
+.arrow {
+  width: 16px;
+  height: 32px;
+  fill: #151515;
+}
+
+.left-arrow {
+  transform: rotateY(180deg);
+}
+
+.compound {
+  width: 51px;
+  height: 51px;
+  fill: #fff;
+}
+
+.grape, .nut, .sesame, .milk, .sugar, .beans, .oat, .seaweed, .seeds {
+  width: 35px;
+  height: 35px;
+  fill: #363636;
+}
+
+.rub {
+  width: 30px;
+  height: 30px;
+  fill: #151515;
+}
+
+.hamburger {
+  width: 25px;
+  height: 23px;
+  fill: #fff;
+
+  &:hover {
+    fill: #0b4d3c;
+  }
+}
+
+.close {
+  width: 21px;
+  height: 21px;
+  fill: #fff;
+
+  &:hover {
+    fill: #61c4d9;
+  }
+}
+
+.play {
+  width: 10px;
+  height: 8px;
+  fill: #365a49;
+  transform: rotate(90deg);
+  margin-left: 5px;
+}
+
+.pause {
+  width: rem(22px);
+  height: rem(22px);
+  fill: #626262;
+}
+
+.volume {
+  width: rem(18px);
+  height: rem(22px);
+  fill: #626262;
+}
+
+.mute {
+  width: rem(25px);
+  height: rem(25px);
+  fill: #626262;
+}
