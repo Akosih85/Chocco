@@ -1,0 +1,48 @@
+.reviews-section {
+  position: relative;
+  background: url("../img/decor/strawberry.png") right 11% top 10% no-repeat;
+
+  &:before {
+    content: url("../img/decor/side-leaf-1.png");
+    position: absolute;
+    bottom: rem(-190px);
+    left: 0;
+    z-index: 1;
+
+    @include tablets {
+      bottom: rem(-125px);
+      left: rem(-28px);
+    }
+
+    @include phonesxs {
+      bottom: rem(-230px);
+      left: rem(-60px);
+    }
+  }
+
+  &:after {
+    content: url("../img/decor/berries.png");
+    position: absolute;
+    bottom: rem(-115px);
+    left: 0;
+    z-index: 1;
+
+    @include tablets {
+      bottom: rem(-65px);
+      left: rem(-35px);
+    }
+
+    @include phonesxs {
+      bottom: rem(-80px);
+      left: rem(-90px);
+    }
+  }
+
+  @include tablets {
+    background-position: right -5% top;
+  }
+
+  @include phonesxs {
+    background: none;
+  }
+}

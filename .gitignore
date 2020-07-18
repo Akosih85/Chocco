@@ -1,2 +1,7 @@
 .idea/
 prepros.config
+src/video/
+node_modules/
+gulpfile.js
+package.json
+package-lock.json

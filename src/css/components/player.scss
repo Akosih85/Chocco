@@ -1,0 +1,224 @@
+.player {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: rem(660px);
+  height: rem(406px);
+  z-index: 2;
+
+  
+  &.active {
+    .player__splash {
+      display: none;
+    }
+  }
+
+  @include tablets {
+    width: 96%;
+  }
+
+  @include phones {
+    max-height: rem(295px);
+  }
+}
+
+.player__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.player__elem {
+  width: 100%;
+  height: 100%;
+}
+
+.player__splash {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("../img/splashscreen.jpeg") center center / cover no-repeat;
+  z-index: 3;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.player__splash-icon {
+  fill: #f5f5f5;
+  width: rem(82px);
+  height: rem(118px);
+  transform: rotate(0deg);
+}
+
+.player__controls {
+  display: flex;
+  flex-direction: row;
+  background: #404040;
+  align-items: center;
+  width: 100%;
+  height: rem(35px);
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  
+  @include phones {
+    justify-content: space-between;
+  }
+}
+
+.player__start {
+  background: #404040;
+  border: none;
+  width: rem(55px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: rem(10px);
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+.player__start-icon {
+  fill: #626262;
+  width: rem(16px);
+  height: rem(22px);
+  transform: rotate(0deg);
+  margin-left: 0;
+}
+
+.player__pause-icon {
+  display: none;
+}
+
+.paused {
+  .player__start-icon {
+    display: none;
+  }
+
+  .player__pause-icon {
+    display: flex;
+  }
+}
+
+.player__playback {
+  width: 68%;
+  position: relative;
+  margin-right: rem(15px);
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    background: #626262;
+    display: block;
+    transform: translateY(-50%);
+  }
+
+  @include phones {
+    width: 35%;
+  }
+}
+
+.player__volume {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @include phones {
+    width: 33%;
+  }
+}
+
+.player__playback-btn, .player__volume-ctrl-btn {
+  background: #626262;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.player__playback-btn {
+  left: 0;
+}
+
+.player__volume-ctrl-btn {
+  right: 0;
+}
+
+.player__mute {
+  width: rem(40px);
+  height: rem(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: #404040;
+  margin-right: rem(23px);
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.player__mute-icon {
+  display: none;
+}
+
+.muted {
+  .player__volume-icon {
+    display: none;
+  }
+
+  .player__mute-icon {
+    display: flex;
+  }
+}
+
+.player__volume-ctrl {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    width: 90%;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    background: #626262;
+    display: block;
+    transform: translateY(-50%);
+
+    @include tablets {
+      width: 80%;
+    }
+  }
+}

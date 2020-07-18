@@ -1,0 +1,34 @@
+.interactive-avatar {
+  width: rem(80px);
+  height: rem(80px);
+
+  &.active .interactive-avatar__link {
+    border-color: #0f5a47;
+  }
+}
+
+.interactive-avatar__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: rem(6px) solid transparent;
+  border-radius: 50%; 
+  overflow: hidden;
+  
+  &:hover {
+    border-color: #0f5a47;
+    outline: none;
+  }
+
+  &:focus {
+    border-color: #0f5a47;
+    outline: none;
+  }
+}
+
+.interactive-avatar__img {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

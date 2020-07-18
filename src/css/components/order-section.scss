@@ -1,0 +1,35 @@
+.order-section {
+  position: relative;
+  color: $darkGreen;
+  background: url("../img/decor/berries-background.png") center / cover no-repeat;
+
+  &:before {
+    content: url("../img/decor/alone-berry.png");
+    position: absolute;
+    bottom: rem(75px);
+    left: 0;
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: url("../img/decor/right-side-leaf.png");
+    position: absolute;
+    bottom: rem(65px);
+    right: 0;
+
+    @include tablets {
+      display: none;
+    }
+  }
+  
+  .section__title {
+    color: inherit;
+
+    @include tablets {
+      margin-bottom: rem(30px);
+    }
+  }
+}
